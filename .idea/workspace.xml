@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b697315b-2a87-4d24-bda1-3f8b0bf38514" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pagmoby-sdk-java.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/API.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/api/AccountAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/api/BalancesAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/api/BankAccountsAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/api/ConnectAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/api/CustomerAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/api/Endpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/api/EntryAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/api/EscrowAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/api/InvoiceAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/api/KeyAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/api/MultiorderAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/api/MultipaymentAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/api/NotificationPreferencesAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/api/OrderAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/api/PaymentAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/api/RefundAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/api/TransferApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/api/filter/Filters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/api/filter/Pagination.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/authentication/Authentication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/authentication/Base64.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/authentication/BasicAuth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/authentication/OAuth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/exception/PagMobyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/exception/UnauthorizedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/exception/UnexpectedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/exception/ValidationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/AccountRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/AmountRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/ApiDateRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/BankAccountRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/BoletoRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/CaptureMethodRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/CheckoutPreferencesRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/CompanyRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/ConnectRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/CreditCardRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/CustomerRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/FundingInstrumentRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/GeolocationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/GrantType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/HolderRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/IdentityDocumentRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/InstallmentRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/InstructionLinesRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/InvoiceRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/ItemRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/MposRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/MultiorderRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/NotificationPreferenceRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/OnlineBankDebitRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/OrderAmountRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/OrderRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/PagMobyAccountRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/PaymentRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/PersonRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/PhoneRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/ReceiverRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/ReceiverTypeRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/RefundRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/RefundingInstrumentRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/ShippingAddressRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/SubtotalsRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/TaxDocumentRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/TransferInstrumentRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/TransferRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Amount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/ApiDate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Balances.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/BankAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Boleto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/CheckoutPreferences.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Company.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Connect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/CreditCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Entry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Error.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/ErrorBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Errors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Escrow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/EscrowStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Fees.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/FundingInstrument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Geolocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Holder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/IdentityDocument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Installment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Invoice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/InvoiceStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Key.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Links.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Mpos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Multiorder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Multipayment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/NotificationPreference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/OnlineBankDebit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/OrderStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/PagMobyAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/PaymentStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Phone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Receiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Refund.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/RefundingInstrument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/ReverseTransfer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/ScopePermission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/ScopePermissionList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/ShippingAddress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/TaxDocument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Transfer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/TransferInstrument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/TransferStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/invoice/Summary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/links/AccountLinks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/links/Checkout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/links/CustomerLinks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/links/EscrowLinks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/links/Href.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/links/MultipaymentLinks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/links/OrderLinks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/links/PayBoleto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/links/PaymentLinks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/links/RedirectHref.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/links/TransferLinks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/response/EntriesListResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/response/InvoiceListResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/response/NotificationPreferenceListResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/response/OrderListResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/response/RefundsListResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/response/TransferListResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/ssl/SSLSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/util/DataHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/util/GsonFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/util/QueryStringFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="438118484">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="117" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="117" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="10" />
+          <entry key="java" value="60" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="60" />
+          <entry key="PLAIN_TEXT" value="10" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>br.com.pagmoby.sdk.java</find>
+      <find>PAGMOBY</find>
+      <find>PagMoby</find>
+      <find>pagmoby</find>
+      <find>br.com.pagmoby.sdk.java.api.api</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>br.com.pagmoby.sdk.java.api.api</replace>
+      <replace>pagboletos</replace>
+      <replace>PAGMOBY</replace>
+      <replace>PagMoby</replace>
+      <replace>br.com.pagmoby.sdk.java.api</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java</dir>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/src</dir>
+      <dir>$PROJECT_DIR$/src/main/java</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/api/AccountAPI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/exception/ValidationException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/PagMobyAccount.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/exception/PagMobyException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/exception/PagMobyException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/PagMobyAccountRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/PagMobyAccountRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/ReceiverRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/request/RefundingInstrumentRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/api/filter/Filters.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/api/EntryAPI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/api/OrderAPI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/API.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="51" />
+    <option name="y" value="25" />
+    <option name="width" value="1315" />
+    <option name="height" value="743" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="pagmoby-sdk-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pagmoby-sdk-java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pagmoby-sdk-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pagmoby-sdk-java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pagmoby-sdk-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pagmoby-sdk-java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pagmoby-sdk-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pagmoby-sdk-java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pagmoby-sdk-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pagmoby-sdk-java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="pagmoby&#9;PSI&#9;JAVA://br.com.pagmoby.sdk.java.api.request.RefundingInstrumentRequest#pagmobyAccount&#10;PAGMOBY&#9;PSI&#9;JAVA://br.com.pagmoby.sdk.java.api.exception.PagMobyException" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534184705701" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/pagmoby-sdk-java-le-master" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/api/filter" />
+      <recent name="$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b697315b-2a87-4d24-bda1-3f8b0bf38514" name="Default Changelist" comment="" />
+      <created>1534165513468</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1534165513468</updated>
+      <workItem from="1534165516393" duration="427000" />
+      <workItem from="1534183926894" duration="910000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1337000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="51" y="25" width="1315" height="743" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2537431" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Learn" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32952693" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Company.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Connect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/CreditCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Entry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Error.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/ErrorBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Errors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Escrow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/EscrowStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Fees.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/FundingInstrument.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Geolocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Holder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/IdentityDocument.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Installment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Invoice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/InvoiceStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Key.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Links.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Mpos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Multiorder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Multipayment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/NotificationPreference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/OnlineBankDebit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/OrderStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/PagMobyAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Payment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/PaymentStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Phone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Receiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/TransferStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/TransferInstrument.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Transfer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/TaxDocument.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/ShippingAddress.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/ScopePermissionList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/ScopePermission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/ReverseTransfer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/RefundingInstrument.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/resource/Refund.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/response/EntriesListResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/response/InvoiceListResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/response/NotificationPreferenceListResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/response/OrderListResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/response/RefundsListResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java/response/TransferListResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

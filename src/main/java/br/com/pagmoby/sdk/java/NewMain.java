@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.pagmoby.sdk.java;
+package br.com.pagmoby.sdk.java.api;
 
 /**
  *
