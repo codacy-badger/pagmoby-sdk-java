@@ -1,7 +1,7 @@
 package br.com.pagmoby.sdk.java;
 
 
-import br.com.pagmoby.sdk.java.api.AccountAPI;
+import br.com.pagmoby.sdk.java.api.SellerAPI;
 import br.com.pagmoby.sdk.java.api.InvoiceAPI;
 import br.com.pagmoby.sdk.java.api.OrderAPI;
 import br.com.pagmoby.sdk.java.api.PaymentAPI;
@@ -37,8 +37,8 @@ public class API {
         return new InvoiceAPI(client);
     }
 
-    public AccountAPI account() {
-        return new AccountAPI(client);
+    public SellerAPI account() {
+        return new SellerAPI(client);
     }
 
     public CustomerAPI customer() {
@@ -47,10 +47,10 @@ public class API {
 
     public ConnectAPI connect() {
         if (client.getEndpoint() == null ? Client.PRODUCTION == null : client.getEndpoint().equals(Client.PRODUCTION)) {
-            return new ConnectAPI(new Client(Client.CONNECT_PRODUCTION, client.getAuthentication()));
+            return new ConnectAPI(new Client(Client.PRODUCTION, client.getAuthentication()));
         }
 
-        return new ConnectAPI(new Client(Client.CONNECT_SANDBOX, client.getAuthentication()));
+        return new ConnectAPI(new Client(Client.PRODUCTION, client.getAuthentication()));
     }
 
     public NotificationPreferencesAPI notification() {

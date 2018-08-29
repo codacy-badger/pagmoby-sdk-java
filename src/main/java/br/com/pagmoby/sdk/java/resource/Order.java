@@ -16,7 +16,7 @@ public class Order {
     private Amount amount;
     private final List<Item> items;
     private final List<Address> addresses = new ArrayList<>();
-    private Customer customer;
+    private Seller customer;
     private final List<Payment> payments = new ArrayList<>();
     private final List<Escrow> escrows = new ArrayList<>();
     private final List<Refund> refunds = new ArrayList<>();
@@ -66,7 +66,7 @@ public class Order {
 
     public List<Address> getAddresses() { return addresses; }
 
-    public Customer getCustomer() {
+    public Seller getCustomer() {
         return customer;
     }
 

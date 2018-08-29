@@ -6,7 +6,7 @@ import java.util.List;
 public class InvoiceRequest {
 
     private List<ItemRequest> items = new ArrayList<>();
-    private CustomerRequest customer;
+    private SellerRequest customer;
     private CheckoutPreferencesRequest checkoutPreferences;
 
     public InvoiceRequest addItem(final String product, final Integer quantity, final String detail, final Integer price) {
@@ -18,12 +18,12 @@ public class InvoiceRequest {
         return items;
     }
 
-    public InvoiceRequest customer(final CustomerRequest customer) {
+    public InvoiceRequest customer(final SellerRequest customer) {
         this.customer = customer;
         return this;
     }
 
-    public CustomerRequest getCustomer() {
+    public SellerRequest getCustomer() {
         return customer;
     }
 

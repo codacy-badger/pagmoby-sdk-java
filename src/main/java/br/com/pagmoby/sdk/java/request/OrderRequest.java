@@ -8,7 +8,7 @@ public class OrderRequest {
 	private String ownId;
 	private OrderAmountRequest amount;
 	private final List<ItemRequest> items = new ArrayList<ItemRequest>();
-	private CustomerRequest customer;
+	private SellerRequest customer;
 	private final List<ReceiverRequest> receivers = new ArrayList<ReceiverRequest>();
 	private CheckoutPreferencesRequest checkoutPreferences;
 
@@ -53,11 +53,11 @@ public class OrderRequest {
 		return this;
 	}
 
-	public CustomerRequest getCustomer() {
+	public SellerRequest getCustomer() {
 		return customer;
 	}
 
-	public OrderRequest customer(final CustomerRequest customer) {
+	public OrderRequest customer(final SellerRequest customer) {
 		this.customer = customer;
 
 		return this;

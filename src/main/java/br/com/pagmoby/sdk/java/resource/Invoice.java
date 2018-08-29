@@ -9,7 +9,7 @@ public class Invoice {
     private Amount amount;
     private List<Item> items;
     private Date createdAt, updatedAt;
-    private Customer customer;
+    private Seller customer;
     private CheckoutPreferences checkoutPreferences;
     private InvoiceStatus status;
     private List<Payment> payments;
@@ -50,11 +50,11 @@ public class Invoice {
         return this;
     }
 
-    public Customer getCustomer() {
+    public Seller getCustomer() {
         return customer;
     }
 
-    public Invoice setCustomer(Customer customer) {
+    public Invoice setCustomer(Seller customer) {
         this.customer = customer;
         return this;
     }

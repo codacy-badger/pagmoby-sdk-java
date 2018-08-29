@@ -2,47 +2,92 @@ package br.com.pagmoby.sdk.java.resource;
 
 public class Address {
 
-    private String streetNumber;
-    private String street;
-    private String city;
-    private String complement;
-    private String district;
-    private String zipCode;
-    private String state;
-    private String type;
-    private String country;
+    public String line1;
+    public String line2;
+    public String line3;
+    public String neighborhood;
+    public String city;
+    public String state;
+    public String postalCode;
+    public String countryCode;
 
-    public String getStreetNumber() { return streetNumber; }
+    public String getLine1() {
+        return line1;
+    }
 
-    public String getStreet() { return street; }
+    public void setLine1(String line1) {
+        this.line1 = line1;
+    }
 
-    public String getCity() { return city; }
+    public String getLine2() {
+        return line2;
+    }
 
-    public String getComplement() { return complement; }
+    public void setLine2(String line2) {
+        this.line2 = line2;
+    }
 
-    public String getDistrict() { return district; }
+    public Object getLine3() {
+        return line3;
+    }
 
-    public String getZipCode() { return zipCode; }
+    public void setLine3(String line3) {
+        this.line3 = line3;
+    }
 
-    public String getState() { return state; }
+    public String getNeighborhood() {
+        return neighborhood;
+    }
 
-    public String getType() { return type; }
+    public void setNeighborhood(String neighborhood) {
+        this.neighborhood = neighborhood;
+    }
 
-    public String getCountry() { return country; }
+    public String getCity() {
+        return city;
+    }
 
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public String getPostalCode() {
+        return postalCode;
+    }
+
+    public void setPostalCode(String postalCode) {
+        this.postalCode = postalCode;
+    }
+
+    public String getCountryCode() {
+        return countryCode;
+    }
+
+    public void setCountryCode(String countryCode) {
+        this.countryCode = countryCode;
+    }
+
+    // Falta Fazer a 
     @Override
     public String toString() {
         return new StringBuilder()
                 .append('{')
-                .append("streetNumber='").append(streetNumber).append('\'')
-                .append(", street='").append(street).append('\'')
+                .append("line1='").append(line1).append('\'')
+                .append(", line2='").append(line2).append('\'')
+                .append(", line3='").append(line3).append('\'')
                 .append(", city='").append(city).append('\'')
-                .append(", complement='").append(complement).append('\'')
-                .append(", district='").append(district).append('\'')
-                .append(", zipCode='").append(zipCode).append('\'')
+                .append(", neighborhood='").append(neighborhood).append('\'')
+                .append(", city='").append(city).append('\'')
                 .append(", state='").append(state).append('\'')
-                .append(", type='").append(type).append('\'')
-                .append(", country='").append(country).append('\'')
+                .append(", postalCode='").append(postalCode).append('\'')
                 .append('}').toString();
     }
 }

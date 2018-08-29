@@ -3,7 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.pagmoby.sdk.java.api;
+package br.com.pagmoby.sdk.java;
+
+import br.com.pagmoby.sdk.java.authentication.Authentication;
+import br.com.pagmoby.sdk.java.authentication.BasicAuth;
+import br.com.pagmoby.sdk.java.resource.Seller;
 
 /**
  *
@@ -15,7 +19,12 @@ public class NewMain {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Authentication auth = new BasicAuth("contato@pagmoby.com.br", "pagmobypay2017");
+        Client client = new Client(Client.PRODUCTION, auth);
+        API api = new API(client);
+        Seller seller = api.account().get("32d9cbbf1cae4be6b95741c8c46bb812");
+
+        System.out.println("seller " + seller.getId());
     }
-    
+
 }

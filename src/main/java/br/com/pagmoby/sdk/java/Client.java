@@ -36,10 +36,7 @@ import static br.com.pagmoby.sdk.java.util.DataHelper.jsonToUrlEncodedString;
 public class Client {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Client.class);
-    public static final String PRODUCTION = "https://api.pagmoby.com.br";
-    public static final String SANDBOX = "https://sandbox.pagmoby.com.br";
-    public static final String CONNECT_PRODUCTION = "https://connect.pagmoby.com.br";
-    public static final String CONNECT_SANDBOX = "https://connect-sandbox.pagmoby.com.br";
+    public static final String PRODUCTION = "https://api.zoop.ws/v1/marketplaces/fa34de127e634e10baa52883416130e6";
     private static String USER_AGENT;
     private final String RESPONSE_BODY_400 = "400";
     private final String RESPONSE_BODY_404 = "404";
@@ -106,16 +103,14 @@ public class Client {
             URL url = new URL(endpoint + requestProps.path);
 
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-            conn.setRequestProperty("User-Agent", USER_AGENT);
             conn.setRequestProperty("Content-type", requestProps.contentType.getMimeType());
-            if (requestProps.accept != null) conn.setRequestProperty("Accept", requestProps.accept);
+
+            if (requestProps.accept != null) {
+                conn.setRequestProperty("Accept", requestProps.accept);
+            }
 
             conn.setRequestMethod(requestProps.method);
 
-            // Disable TLS 1.0
-            if (conn instanceof HttpsURLConnection) {
-                ((HttpsURLConnection) conn).setSSLSocketFactory(new SSLSupport());
-            }
 
             if (authentication != null) {
                 authentication.authenticate(conn);
@@ -153,7 +148,7 @@ public class Client {
             LOGGER.debug("<-- END HTTP ({}-byte body)", conn.getContentLength());
 
             return gson.fromJson(responseBody.toString(), requestProps.<T>getType());
-        } catch (IOException | KeyManagementException | NoSuchAlgorithmException e) {
+        } catch (IOException e) {
             throw new PagMobyException("Error occurred connecting to PagMoby API: " + e.getMessage(), e);
         }
     }
@@ -245,19 +240,32 @@ public class Client {
         protected ContentType contentType;
         protected String accept;
 
-        public RequestProps() {}
+        public RequestProps() {
+        }
 
-        public String getMethod() { return method; }
+        public String getMethod() {
+            return method;
+        }
 
-        public String getPath() { return path; }
+        public String getPath() {
+            return path;
+        }
 
-        public Object getObject() { return object; }
+        public Object getObject() {
+            return object;
+        }
 
-        public <T> Class<T> getType() { return type; }
+        public <T> Class<T> getType() {
+            return type;
+        }
 
-        public ContentType getContentType() { return contentType; }
+        public ContentType getContentType() {
+            return contentType;
+        }
 
-        public String getAccept() { return accept; }
+        public String getAccept() {
+            return accept;
+        }
     }
 
     private static class RequestPropsBuilder extends RequestProps {
@@ -298,7 +306,9 @@ public class Client {
 
         public String acceptBuilder(String version) {
             String value = "application/json";
-            if(version == "2.1") value += ";version=" + version;
+            if (version == "2.1") {
+                value += ";version=" + version;
+            }
             return value;
         }
     }
