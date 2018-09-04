@@ -206,15 +206,15 @@
       <find>PAGMOBY</find>
       <find>PagMoby</find>
       <find>pagmoby</find>
-      <find>br.com.pagmoby.sdk.java.api.api</find>
+      <find>br.com.pagmoby.sdk.java.api</find>
     </findStrings>
     <replaceStrings>
       <replace />
-      <replace>br.com.pagmoby.sdk.java.api.api</replace>
+      <replace>br.com.pagmoby.sdk.java.api</replace>
       <replace>pagboletos</replace>
       <replace>PAGMOBY</replace>
       <replace>PagMoby</replace>
-      <replace>br.com.pagmoby.sdk.java.api</replace>
+      <replace>br.com.pagmoby.sdk.java</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/main/java/br/com/pagmoby/sdk/java</dir>
@@ -307,7 +307,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="pagmoby&#9;PSI&#9;JAVA://br.com.pagmoby.sdk.java.api.request.RefundingInstrumentRequest#pagmobyAccount&#10;PAGMOBY&#9;PSI&#9;JAVA://br.com.pagmoby.sdk.java.api.exception.PagMobyException" />
+    <property name="SearchEverywhereHistoryKey" value="pagmoby&#9;PSI&#9;JAVA://br.com.pagmoby.sdk.java.request.RefundingInstrumentRequest#pagmobyAccount&#10;PAGMOBY&#9;PSI&#9;JAVA://br.com.pagmoby.sdk.java.exception.PagMobyException" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534184705701" />

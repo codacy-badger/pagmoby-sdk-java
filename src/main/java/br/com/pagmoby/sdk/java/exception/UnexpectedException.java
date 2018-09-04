@@ -1,4 +1,3 @@
 package br.com.pagmoby.sdk.java.exception;
 
-public class UnexpectedException extends PagMobyException {
-}
+public class UnexpectedException extends PagMobyAPIException {}

@@ -1,35 +1,35 @@
 package br.com.pagmoby.sdk.java.exception;
 
-import br.com.pagmoby.sdk.java.resource.Error;
-import br.com.pagmoby.sdk.java.resource.Errors;
+import br.com.pagmoby.sdk.java.models.error.Errors;
 
-import java.util.List;
-
-public class ValidationException extends PagMobyException {
+public class ValidationException extends PagMobyAPIException {
 
     private final int responseCode;
     private final String responseStatus;
     private final Errors errors;
 
+    /**
+     * This constructor is used to set the code, status and errors
+     * from api response, when it trows a ValidationException.
+     *
+     * @param   responseCode
+     *          {@code int} api response code
+     *
+     * @param   responseStatus
+     *          {@code String} api response status
+     *
+     * @param   errors
+     *          {@code Errors} api errors
+     */
     public ValidationException(final int responseCode, final String responseStatus, final Errors errors) {
         this.responseCode = responseCode;
         this.responseStatus = responseStatus;
         this.errors = errors;
     }
 
-    public int getResponseCode() {
-        return responseCode;
-    }
+    public int getResponseCode() { return responseCode; }
 
-    public String getResponseStatus() {
-        return responseStatus;
-    }
+    public String getResponseStatus() { return responseStatus; }
 
-    public Errors getError() {
-        return errors;
-    }
-
-    public List<Error> getErrors() {
-        return errors.getErrors();
-    }
+    public Errors getErrors() { return errors; }
 }
