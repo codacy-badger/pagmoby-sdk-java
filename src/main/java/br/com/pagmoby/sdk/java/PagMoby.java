@@ -10,6 +10,7 @@ public class PagMoby {
 
 
     public static final String PRODUCTION_URL = "https://api.zoop.ws/v1/marketplaces/fa34de127e634e10baa52883416130e6";
+    public static final String AUTH_URL = "https://api.zoop.ws/v1/users/signin";
 
     private static String USER_AGENT;
 

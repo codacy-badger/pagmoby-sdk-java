@@ -15,9 +15,11 @@ import br.com.pagmoby.sdk.java.models.Balances;
 import br.com.pagmoby.sdk.java.models.Entries;
 import br.com.pagmoby.sdk.java.models.Transfers;
 import br.com.pagmoby.sdk.java.models.Escrows;
+import br.com.pagmoby.sdk.java.models.Seller;
 
 public class APIResources {
 
+    private static Seller sellerInstance = new Seller();
     private static Customers customerInstance = new Customers();
     private static Orders orderInstance = new Orders();
     private static Payments paymentInstance = new Payments();
@@ -34,33 +36,69 @@ public class APIResources {
     private static Transfers transfersInstance = new Transfers();
     private static Escrows escrowsInstance = new Escrows();
 
-    public static Customers customers() { return customerInstance; }
+    
+    public static Seller sellers() {
+        return sellerInstance;
+    }
 
-    public static Orders orders() { return orderInstance; }
+    
+    public static Customers customers() {
+        return customerInstance;
+    }
 
-    public static Payments payments() { return paymentInstance; }
+    public static Orders orders() {
+        return orderInstance;
+    }
 
-    public static Refunds refunds() { return refundInstance; }
+    public static Payments payments() {
+        return paymentInstance;
+    }
 
-    public static NotificationPreferences notificationPreferences() { return notificationPreferenceInstance; }
+    public static Refunds refunds() {
+        return refundInstance;
+    }
 
-    public static Webhooks webhooks() { return webhookInstance; }
+    public static NotificationPreferences notificationPreferences() {
+        return notificationPreferenceInstance;
+    }
 
-    public static Accounts accounts() { return accountInstance; }
+    public static Webhooks webhooks() {
+        return webhookInstance;
+    }
 
-    public static Connect connect() { return connectInstance; }
+    public static Accounts accounts() {
+        return accountInstance;
+    }
 
-    public static Multiorders multiorders() { return multiorderInstance; }
+    public static Connect connect() {
+        return connectInstance;
+    }
 
-    public static Multipayments multipayments() { return multipaymentsInstance; }
+    public static Multiorders multiorders() {
+        return multiorderInstance;
+    }
 
-    public static BankAccounts bankAccounts() { return bankAccountsInstance; }
+    public static Multipayments multipayments() {
+        return multipaymentsInstance;
+    }
 
-    public static Balances balances() { return balancesInstance; }
+    public static BankAccounts bankAccounts() {
+        return bankAccountsInstance;
+    }
 
-    public static Entries entries() { return entriesInstance; }
+    public static Balances balances() {
+        return balancesInstance;
+    }
 
-    public static Transfers transfers() { return transfersInstance; }
+    public static Entries entries() {
+        return entriesInstance;
+    }
 
-    public static Escrows escrows() { return escrowsInstance; }
+    public static Transfers transfers() {
+        return transfersInstance;
+    }
+
+    public static Escrows escrows() {
+        return escrowsInstance;
+    }
 }

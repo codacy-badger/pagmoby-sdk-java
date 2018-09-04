@@ -2,6 +2,7 @@ package br.com.pagmoby.sdk.java.models;
 
 
 import static br.com.pagmoby.sdk.java.PagMoby.PRODUCTION_URL;
+import static br.com.pagmoby.sdk.java.PagMoby.AUTH_URL;
 import br.com.pagmoby.sdk.java.auth.Authentication;
 
 public class Setup {
@@ -132,5 +133,5 @@ public class Setup {
     /**
      * These enums are used to difference all PagMoby API environments.
      */
-    public enum Environment { SANDBOX, CONNECT_SANDBOX, PRODUCTION, CONNECT_PRODUCTION }
+    public enum Environment { PRODUCTION,AUTH_URL }
 }
