@@ -10,6 +10,7 @@ import java.util.Map;
 public class Seller {
 
     private static final String ENDPOINT = "/sellers";
+     private static final String INDIVIDUALS = "/individuals";
     private static final ContentType CONTENT_TYPE = ContentType.APPLICATION_JSON;
     private RequestMaker requestMaker;
 
@@ -18,7 +19,7 @@ public class Seller {
         this.requestMaker = new RequestMaker(setup);
         RequestProperties props = new RequestPropertiesBuilder()
                 .method("POST")
-                .endpoint(ENDPOINT)
+                .endpoint(ENDPOINT.concat(INDIVIDUALS))
                 .body(body)
                 .type(Customers.class)
                 .contentType(CONTENT_TYPE);
