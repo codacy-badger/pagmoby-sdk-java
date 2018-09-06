@@ -7,31 +7,32 @@ import org.apache.http.entity.ContentType;
 
 import java.util.Map;
 
-public class Balances {
+public class MCCs {
 
-    private static final String ENDPOINT = "/v2/balances";
+    private static final String ENDPOINT = "/merchant_category_codes";
     private static final ContentType CONTENT_TYPE = ContentType.APPLICATION_JSON;
     private RequestMaker requestMaker;
 
     /**
-     * This method is used to get the balances values of a PagMoby account (unavailable, future, current). The
-     * request uses the accept version {@code 2.1}.
+     * Listar MCCs (Merchant Category Codes)
      *
-     * @param   setup
-     *          {@code Setup} the setup object.
+     * @HTTP GET
+     * @url https://api.zoop.ws/users/{user_id}/permissions
      *
-     * @return  {@code Map<String, Object>}
+     * @param setup {@code Setup} objeto de configuração.
+     *
+     * @return {@code Map<String, Object>}.
      */
-    public Map<String, Object> get(Setup setup) {
+    public Map<String, Object> list(Setup setup) {
         this.requestMaker = new RequestMaker(setup);
         RequestProperties props = new RequestPropertiesBuilder()
                 .method("GET")
                 .endpoint(ENDPOINT)
-                .type(Balances.class)
+                .type(MCCs.class)
                 .contentType(CONTENT_TYPE)
-                .accept("2.1")
                 .build();
 
-        return this.requestMaker.doRequest(props);
+        return requestMaker.doRequest(props);
     }
+
 }

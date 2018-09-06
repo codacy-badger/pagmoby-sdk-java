@@ -14,14 +14,13 @@ public class Seller {
     private static final ContentType CONTENT_TYPE = ContentType.APPLICATION_JSON;
     private RequestMaker requestMaker;
 
-
     public Map<String, Object> create(Map<String, Object> body, Setup setup) {
         this.requestMaker = new RequestMaker(setup);
         RequestProperties props = new RequestPropertiesBuilder()
                 .method("POST")
                 .endpoint(ENDPOINT.concat(INDIVIDUALS))
                 .body(body)
-                .type(Customers.class)
+                .type(Seller.class)
                 .contentType(CONTENT_TYPE);
 
         return this.requestMaker.doRequest(props);
@@ -33,7 +32,7 @@ public class Seller {
                 .method("POST")
                 .endpoint(String.format("%s/%s/fundinginstruments", ENDPOINT, sellerId))
                 .body(body)
-                .type(Customers.class)
+                .type(User.class)
                 .contentType(CONTENT_TYPE)
                 .build();
 
@@ -45,7 +44,7 @@ public class Seller {
         RequestProperties props = new RequestPropertiesBuilder()
                 .method("DELETE")
                 .endpoint(String.format("/v1/fundinginstruments/%s", creditCardId))
-                .type(Customers.class)
+                .type(User.class)
                 .contentType(CONTENT_TYPE)
                 .build();
 
@@ -57,7 +56,7 @@ public class Seller {
         RequestProperties props = new RequestPropertiesBuilder()
                 .method("GET")
                 .endpoint(String.format("%s/%s", ENDPOINT, sellerId))
-                .type(Customers.class)
+                .type(User.class)
                 .contentType(CONTENT_TYPE)
                 .build();
 
@@ -69,7 +68,7 @@ public class Seller {
         RequestProperties props = new RequestPropertiesBuilder()
                 .method("GET")
                 .endpoint(ENDPOINT)
-                .type(Customers.class)
+                .type(User.class)
                 .contentType(CONTENT_TYPE)
                 .build();
 

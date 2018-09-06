@@ -22,7 +22,7 @@ public class Teste {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Authentication auth = new BasicAuth("usuario", "senha");
+        Authentication auth = new BasicAuth("contato@pagmoby.com.br", "&jfw130291");
         Setup setup = new Setup().setAuthentication(auth).setEnvironment(Setup.Environment.PRODUCTION);
 
         Map<String, Object> phone = payloadFactory(
@@ -30,7 +30,7 @@ public class Teste {
                 value("username", "usuario@wiguiart.com"),
                 value("first_name", "first_name"),
                 value("last_name", "last_name"),
-                value("taxpayer_id", "11111111111"),
+                value("taxpayer_id", "66298574530"),
                 value("password", "12345678")
         );
 

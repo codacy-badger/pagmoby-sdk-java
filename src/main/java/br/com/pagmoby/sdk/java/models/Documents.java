@@ -1,81 +1,93 @@
-
 package br.com.pagmoby.sdk.java.models;
 
-import java.util.List;
+import br.com.pagmoby.sdk.java.api.request.RequestMaker;
+import br.com.pagmoby.sdk.java.api.request.RequestProperties;
+import br.com.pagmoby.sdk.java.api.request.RequestPropertiesBuilder;
+import org.apache.http.entity.ContentType;
+
+import java.util.Map;
 
 public class Documents {
 
-    private String resource;
-    private String uri;
-    private List<Item> items = null;
-    private Integer limit;
-    private Integer offset;
-    private Boolean hasMore;
-    private Integer queryCount;
-    private Integer total;
+    private static final String ENDPOINT = "/sellers";
+    private static final String DOCUMENTS = "/documents";
+    private static final ContentType CONTENT_TYPE = ContentType.APPLICATION_JSON;
+    private RequestMaker requestMaker;
 
-    public String getResource() {
-        return resource;
+    /**
+     * Criar documento de cadastro de vendedor
+     *
+     * @HTTP POST
+     * @url https://api.zoop.ws/v1/marketplaces/{marketplace_id}/sellers/
+     * {seller_id}/documents
+     *
+     * @param sellerId
+     * @param body
+     * @param setup {@code Setup} objeto de configuração.
+     *
+     * @return {@code Map<String, Object>}.
+     */
+    public Map<String, Object> create(String sellerId, Map<String, Object> body,
+            Setup setup) {
+        this.requestMaker = new RequestMaker(setup);
+        RequestProperties props = new RequestPropertiesBuilder()
+                .method("POST")
+                .endpoint(String.format("%s/%s/%s", ENDPOINT, sellerId, DOCUMENTS))
+                .body(body)
+                .type(Seller.class)
+                .contentType(CONTENT_TYPE);
+
+        return this.requestMaker.doRequest(props);
     }
 
-    public void setResource(String resource) {
-        this.resource = resource;
-    }
+    /**
+     * Listar documentos de um vendedor
+     *
+     * @HTTP GET
+     * @url https://api.zoop.ws/v1/marketplaces/{marketplace_id}/sellers/{seller_id}
+     * /documents
+     *
+     * @param sellerId
+     * @param setup {@code Setup} objeto de configuração.
+     *
+     * @return {@code Map<String, Object>}.
+     */
+    public Map<String, Object> list(String sellerId, Setup setup) {
+        this.requestMaker = new RequestMaker(setup);
+        RequestProperties props = new RequestPropertiesBuilder()
+                .method("GET")
+                .endpoint(String.format("%s/%s/%s", ENDPOINT, sellerId, DOCUMENTS))
+                .type(User.class)
+                .contentType(CONTENT_TYPE)
+                .build();
 
-    public String getUri() {
-        return uri;
+        return this.requestMaker.doRequest(props);
     }
+    
 
-    public void setUri(String uri) {
-        this.uri = uri;
-    }
+    /**
+     * Atualiza os dados de um documento de um vendedor
+     * 
+     * @HTTP PUT
+     * @url https://api.zoop.ws/v1/marketplaces/{marketplace_id}/sellers/documents/{id}
+     *
+     * @param idDocuments
+     * @param body
+     * @param setup {@code Setup} objeto de configuração.
+     *
+     * @return {@code Map<String, Object>}.
+     */
+    public Map<String, Object> update(String idDocuments,Map<String, Object> body,
+            Setup setup) {
+        this.requestMaker = new RequestMaker(setup);
+        RequestProperties props = new RequestPropertiesBuilder()
+                .method("PUT")
+                .endpoint(String.format("%s/%s/%s", ENDPOINT,DOCUMENTS,idDocuments))
+                .body(body)
+                .type(Seller.class)
+                .contentType(CONTENT_TYPE);
 
-    public List<Item> getItems() {
-        return items;
-    }
-
-    public void setItems(List<Item> items) {
-        this.items = items;
-    }
-
-    public Integer getLimit() {
-        return limit;
-    }
-
-    public void setLimit(Integer limit) {
-        this.limit = limit;
-    }
-
-    public Integer getOffset() {
-        return offset;
-    }
-
-    public void setOffset(Integer offset) {
-        this.offset = offset;
-    }
-
-    public Boolean getHasMore() {
-        return hasMore;
-    }
-
-    public void setHasMore(Boolean hasMore) {
-        this.hasMore = hasMore;
-    }
-
-    public Integer getQueryCount() {
-        return queryCount;
-    }
-
-    public void setQueryCount(Integer queryCount) {
-        this.queryCount = queryCount;
-    }
-
-    public Integer getTotal() {
-        return total;
-    }
-
-    public void setTotal(Integer total) {
-        this.total = total;
+        return this.requestMaker.doRequest(props);
     }
 
 }
